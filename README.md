@@ -2,10 +2,9 @@
 
 ## Table of contents
 
-[Description](#description)
-[Mock Up](#video-and-picture-of-mock-up)
-[Requirements](#requirements)
-[]()
+- [Description](#description)
+- [Mock Up](#video-and-picture-of-mock-up)
+- [Requirements](#requirements)
 
 ---
 

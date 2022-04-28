@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/haileyrb25/team-generator#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "inquirer": "^8.2.3",
     "jest": "^28.0.1"
   }
