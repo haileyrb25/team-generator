@@ -17,21 +17,6 @@ const formQuestion = async () => {
     const employeeInput = await inquirer
         .prompt ([
             {
-            type: 'input',
-            message: 'What is your name?', 
-            name: 'name',
-            },
-            {
-            type: 'input',
-            message: 'What is your ID number?', 
-            name: 'id',
-            },
-            {
-            type: 'input',
-            message: 'What is your email address?', 
-            name: 'email',
-            },
-            {
             type: 'list',
             message: 'What is your role?', 
             name: 'role',
@@ -42,6 +27,21 @@ const formQuestion = async () => {
     if (employeeInput.role === 'Intern') {
         const internSpec = await inquirer
             .prompt ([
+                {
+                    type: 'input',
+                    message: 'What is your name?', 
+                    name: 'name',
+                    },
+                    {
+                    type: 'input',
+                    message: 'What is your ID number?', 
+                    name: 'id',
+                    },
+                    {
+                    type: 'input',
+                    message: 'What is your email address?', 
+                    name: 'email',
+                    },
                 {
                     type: 'input',
                     message: 'What school did you attend?',
@@ -61,6 +61,21 @@ const formQuestion = async () => {
         .prompt ([
             {
                 type: 'input',
+                message: 'What is your name?', 
+                name: 'name',
+                },
+                {
+                type: 'input',
+                message: 'What is your ID number?', 
+                name: 'id',
+                },
+                {
+                type: 'input',
+                message: 'What is your email address?', 
+                name: 'email',
+                },
+            {
+                type: 'input',
                 message: 'What is your GitHub username?',
                 name: 'github',
             }
@@ -78,7 +93,22 @@ const formQuestion = async () => {
 } else if (employeeInput.role === 'Manager') {
     const managerSpec = await inquirer
         .prompt([
-        {
+            {
+                type: 'input',
+                message: 'What is your name?', 
+                name: 'name',
+                },
+                {
+                type: 'input',
+                message: 'What is your ID number?', 
+                name: 'id',
+                },
+                {
+                type: 'input',
+                message: 'What is your email address?', 
+                name: 'email',
+                },
+            {
             type:'input',
             message: 'What is your office number?',
             name: 'officeNumber',
