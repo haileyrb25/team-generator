@@ -2,7 +2,8 @@
 const fs = require(`fs`);
 const inquirer = require(`inquirer`);
 const path = require(`path`);
-const generateTeam = require(`./src/team`)
+const generateTeam = require(`./src/team.js`)
+const outputPath = path.join(OUTPUT_DIR, "index.html");
 
 // from lib
 const Manager = require(`./lib/Manager`);
@@ -139,8 +140,8 @@ const addEmployee = await inquirer
   ])
   
     if (addEmployee.lastOption === 'Add new employee') {
-        return init()
-    }
+        return formQuestion()
+    } else
     return generateMyTeam();
 }
 init();
