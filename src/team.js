@@ -4,74 +4,74 @@ const fs = require("fs");
 const render = (employees) => {
     let myteam = "";
 
-    employees.forNewEmployee((employee) => {
-        switch (employee.getRole()) {
-            case "Manager":
-            myteam += `
-                <div class="card mb-3" style="max-width: 23rem;">
-                <div class="card-header">
-                  <h3>${employee.getName()}</h3>
-                  <h3>${employee.getRole()}</h3>
-                </div>
-                <div class="card-body">
-                  <p>
-                    <div class="card">
-                      <ul class="list-group">
-                        <li class="list-group-item">ID: ${employee.getId()}</li>
-                        <li class="list-group-item">Email: ${employee.getEmail()}</li>
-                        <li class="list-group-item">Office Number: ${employee.getOfficeNumber()}</li>
-                      </ul>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              `;
-        break;
-            case "Engineer":
-                myteam += `
-                <div class="card mb-3" style="max-width: 23rem;">
-                <div class="card-header">
-                  <h3>${employee.getName()}</h3>
-                  <h3>${employee.getRole()}</h3>
-                </div>
-                <div class="card-body">
-                  <p>
-                    <div class="card">
-                      <ul class="list-group">
-                        <li class="list-group-item">ID: ${employee.getId()}</li>
-                        <li class="list-group-item">Email: ${employee.getEmail()}</li>
-                        <li class="list-group-item">GitHub: ${employee.getGitHub()}</li>
-                      </ul>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              `;
-        break;
-            case "Intern":
-                myteam += `
-                <div class="card mb-3" style="max-width: 23rem;">
-                <div class="card-header">
-                  <h4>${employee.getName()}</h4>
-                  <h4>${employee.getRole()}</h4>
-                </div>
-                <div class="card-body">
-                  <p>
-                    <div class="card">
-                      <ul class="list-group">
-                        <li class="list-group-item">ID: ${employee.getId()}</li>
-                        <li class="list-group-item">Email: ${employee.getEmail()}</li>
-                        <li class="list-group-item">School:${employee.getSchool()}</li>
-                      </ul>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              `;
-        break;
-        default:
-            return "Error";
-        }});
+    // employees.forNewEmployee((employee) => {
+    //     switch (employee.getRole()) {
+    //         case "Manager":
+    //         myteam += `
+    //             <div class="card mb-3" style="max-width: 23rem;">
+    //             <div class="card-header">
+    //               <h3>${employee.getName()}</h3>
+    //               <h3>${employee.getRole()}</h3>
+    //             </div>
+    //             <div class="card-body">
+    //               <p>
+    //                 <div class="card">
+    //                   <ul class="list-group">
+    //                     <li class="list-group-item">ID: ${employee.getId()}</li>
+    //                     <li class="list-group-item">Email: ${employee.getEmail()}</li>
+    //                     <li class="list-group-item">Office Number: ${employee.getOfficeNumber()}</li>
+    //                   </ul>
+    //                 </div>
+    //               </p>
+    //             </div>
+    //           </div>
+    //           `;
+    //     break;
+    //         case "Engineer":
+    //             myteam += `
+    //             <div class="card mb-3" style="max-width: 23rem;">
+    //             <div class="card-header">
+    //               <h3>${employee.getName()}</h3>
+    //               <h3>${employee.getRole()}</h3>
+    //             </div>
+    //             <div class="card-body">
+    //               <p>
+    //                 <div class="card">
+    //                   <ul class="list-group">
+    //                     <li class="list-group-item">ID: ${employee.getId()}</li>
+    //                     <li class="list-group-item">Email: ${employee.getEmail()}</li>
+    //                     <li class="list-group-item">GitHub: ${employee.getGitHub()}</li>
+    //                   </ul>
+    //                 </div>
+    //               </p>
+    //             </div>
+    //           </div>
+    //           `;
+    //     break;
+    //         case "Intern":
+    //             myteam += `
+    //             <div class="card mb-3" style="max-width: 23rem;">
+    //             <div class="card-header">
+    //               <h4>${employee.getName()}</h4>
+    //               <h4>${employee.getRole()}</h4>
+    //             </div>
+    //             <div class="card-body">
+    //               <p>
+    //                 <div class="card">
+    //                   <ul class="list-group">
+    //                     <li class="list-group-item">ID: ${employee.getId()}</li>
+    //                     <li class="list-group-item">Email: ${employee.getEmail()}</li>
+    //                     <li class="list-group-item">School:${employee.getSchool()}</li>
+    //                   </ul>
+    //                 </div>
+    //               </p>
+    //             </div>
+    //           </div>
+    //           `;
+    //     break;
+    //     default:
+    //         return "Error";
+    //     }});
         
     const indexHTML = `
     <!DOCTYPE html>
