@@ -36,7 +36,7 @@ const render = (employees) => {
                     </div>
                     `;
         break;    
-        case "Manager":
+        case "Intern":
           myteam += `
           <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
           <div class="card-header">${employee.getName()}</div>
